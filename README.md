@@ -37,6 +37,15 @@
     bj_pts = [[c, r, 0] for r in range(board_pattern[1]) for c in range(board_pattern[0])]
     obj_points = [np.array(obj_pts, dtype=np.float32) * board_cellsize] * len(img_points)
     ```
+
+  * Camera Calibration 실행 과정<br>
+    <img src="https://github.com/limstinger/Image_Calibration-distortion/assets/113160281/2181b629-7ca4-41e9-94e0-eb2ef2045429" width="300" height="500" />
+    <img src="https://github.com/limstinger/Image_Calibration-distortion/assets/113160281/129aadbb-3ee0-4f96-8b1b-e6af0b08d120" width="300" height="500" />
+    <img src="https://github.com/limstinger/Image_Calibration-distortion/assets/113160281/2b17d97b-5306-439c-8a85-b93e35a8d366" width="300" height="500" />
+    <br>
+  * Camera Calibration 실행 결과
+    ![Result](https://github.com/limstinger/Image_Calibration-distortion/assets/113160281/87e85ddc-a186-416a-9709-f6f4a8d11031) 
+
 * Distortion Correction
   * 렌즈 왜곡을 보정
     ```
@@ -48,6 +57,8 @@
     undistorted_image = undistorted_image[y:y+h, x:x+w]
     return undistorted_image
     ```
+
+
 
 
       
